@@ -677,6 +677,10 @@ h2{
   font-size: 30px;
 }
 
+div.row.grid {
+    max-width: 100%;
+}
+
 /* footer */
 
 
