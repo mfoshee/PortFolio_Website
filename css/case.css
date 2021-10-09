@@ -268,9 +268,30 @@ button:hover
   box-shadow: none !important;
 }
 
-.test-popup-link {
-  
+.smCasePhoto {
+  /* align-content: 186px; */
+  align-self: flex-start;
+  z-index: -1;
+  float: left;
+  margin: 8px;
+  width: 250px;
+  padding-right: 30px;
 }
+
+.casePhotoSm {
+  align-content: 186px;
+  align-self: flex-start;
+  z-index: -1;
+  float: right;
+  margin: 8px;
+  width: 300px;
+}
+
+.protoImage {
+  display: inline-flex;
+}
+
+
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
