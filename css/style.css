@@ -10,6 +10,10 @@
   text-align: center;
 }
 
+.material-icons {
+  vertical-align: middle;
+}
+
 .headerGrid {
   display:grid;
   grid-template-columns: 5% 44% 16% 13% 10% 10%;
@@ -39,7 +43,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #FBEEF1;
+  background-color: white;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -56,7 +60,7 @@
 }
 
 .dropdown-content a:hover {
-  background-color: #DCF2FC;
+  background-color: #FBEEF1;
   color: #5A5A5A;
   font-weight: 600;
 }
@@ -257,6 +261,7 @@ h5{
 
 .flex-container {
   display: flex;
+  flex-wrap: wrap;
   background-color: white;
   width: auto;
   justify-content: center;
@@ -268,6 +273,7 @@ h5{
   padding: 20px;
   font-size: 30px;
 }
+
 
 
 /* ****************************************************************** */
