@@ -163,9 +163,12 @@ button {
   cursor: pointer;
   border: none;
   background-color: white;
+  border-radius: 20px;
 }
 
 button:hover {transform: scale(105%);}
+
+
 
 body {
   background-image: url("../images/puzzle_piece.png"), url("../images/gradient.png");
@@ -341,6 +344,20 @@ h5{
 /* flip card end */
 /* ****************************************************************** */
 
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  position: absolute; right: 3%; top: 120px;
+  align-items: right;
+  color: #5A5A5A;
+  padding: 5px;
+  border-radius: 10px;
+  width: 230px;
+  text-align: center;
+}
 
 
 p {
