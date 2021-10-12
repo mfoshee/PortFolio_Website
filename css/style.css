@@ -1,5 +1,18 @@
 /* header */
 
+.navbar-brand {
+  padding-left: 5%;
+  padding-top: 30px;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.navbar-nav {
+  justify-content: end;
+}
+
 .navigation {
   font-family: open-sans, sans-serif;
   font-weight: 400;
@@ -21,6 +34,7 @@
   width: 100%;   
   background-size: 100%;
   padding-top: 20px;
+
 }
 
 .dropbtn {
@@ -168,7 +182,13 @@ button {
 
 button:hover {transform: scale(105%);}
 
+button.dropbtn {
+  background: none;
+}
 
+.button-group button {
+  padding-right: 30px;
+}
 
 body {
   background-image: url("../images/puzzle_piece.png"), url("../images/gradient.png");
@@ -200,6 +220,7 @@ body {
   line-height: 10px;
   white-space: nowrap;
   display: block;
+  margin-bottom: 10px;
 }
 
 h1 {
@@ -239,6 +260,7 @@ h3 {
   border-radius: 20px 20px 0 0;
   margin-top: 0;
   margin-bottom: 20px;
+  width: 100%;
 }
 
 h5{
@@ -545,6 +567,7 @@ button.more {
     background-repeat: no-repeat;
     background-position-y: 0;
     background-size: cover;
+    z-index: 1;
   }
   
   .headerGrid {
@@ -560,6 +583,11 @@ button.more {
 
   .navigation {
       display: none;
+  }
+
+  #lineGrad3 {
+    margin-left: 0%;
+    width: 90%;
   }
 
   .mobileDetails {display: inline-block;}
@@ -645,7 +673,8 @@ button.more {
     white-space: nowrap;
     line-height: 80px;
     padding-top: 60px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
+    margin-right: 2vw;
     text-shadow: 1px 1px rgba(255, 255, 255, .8);
   }
 
@@ -686,7 +715,8 @@ h2{
 }
 
 .flex-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto;
   background-color: white;
   width: auto;
   justify-content: center;
@@ -696,7 +726,7 @@ h2{
 
 .flex-container > div {
   margin: 10px;
-  padding: 10px;
+  padding: 0;
   font-size: 30px;
 }
 
@@ -708,8 +738,14 @@ div.row.grid {
 
 
 .footerGrid {
-    display:inline;
-    background-image: none;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: auto auto auto;
+    background-image: url(../images/gradient.png);
+    width: 100%;
+    margin-top: 0;
   }
 
   .childLogo {
@@ -724,6 +760,11 @@ div.row.grid {
     margin-top: 20px;
   }
   
+footer {
+  width: 100%;
+  padding: 0;
+}
+
   .footerGrid .navigation {display: none;}
 
   .footerGrid .social {
@@ -731,13 +772,17 @@ div.row.grid {
     display: inline-flex;
     justify-content: center;
     margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 25px;
     padding-top: 20px;
   }
 
   .footLine {
     margin-top: 100px;
-    margin-bottom: 0px;
+    margin-bottom: 50px;
+    margin-left: 0;
+    width: 100%;
+    margin-right: 0;
   }
 
 .flip-card {

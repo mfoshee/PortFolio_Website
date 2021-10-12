@@ -124,7 +124,7 @@ iframe {
 
 .sidebar {
   grid-area: auto;
-  width: 210px;
+  width: 20vw;
   position: sticky;
   margin-top: 15px;
   padding: 10px;
@@ -139,7 +139,9 @@ iframe {
   grid-area: auto;
   width: 80%;
   text-align: left;
-  padding: 30px;
+  padding-left: 70px;
+  padding-right: 20px;
+  /* padding: 30px; */
 }
 
 ul {
@@ -300,7 +302,7 @@ button:hover
     width: 65%;
   /* margin: 0 auto; */
     /* height: span; */
-    padding: 200px 10% 30px 10%;
+    padding: 200px 7% 30px 7%;
     grid-template-areas:
       "sidePhone" 
       "studyContent"
