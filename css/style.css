@@ -187,7 +187,12 @@ button.dropbtn {
 }
 
 .button-group button {
-  padding-right: 30px;
+  padding-right: 50px;
+  line-height: 35px;
+}
+
+.button-group button:hover {
+  text-decoration: underline;
 }
 
 body {
@@ -220,6 +225,18 @@ body {
   line-height: 10px;
   white-space: nowrap;
   display: block;
+  margin-bottom: 10px;
+}
+
+.hello2 {
+  color: #DE007A;
+  font-size: 32px;
+  font-family: gala, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 30px;
+  /* white-space: nowrap; */
+  /* display: block; */
   margin-bottom: 10px;
 }
 
@@ -658,6 +675,37 @@ button.more {
   right: 45px;
   font-size: 60px;
 }
+
+.carousel-control-prev-icon {
+  background: url(../images/leftarrow.png);
+  background-size: 21px 37px;
+  height: 37px;
+  width: 21px;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+
+.carousel-control-next-icon {
+  background: url(../images/rightarrow.png);
+  background-size: 21px 37px;
+  height: 37px;
+  width: 21px;
+  background-repeat: no-repeat;
+  align-items: center;
+}
+
+
+.arrowAlign {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+
+/* 
+.carousel {
+  background-color: blue;
+} */
+
 /* ****************************************************************** */
 
 
@@ -682,6 +730,7 @@ button.more {
 
   #navigation {
     position: fixed;
+    top: 0;
     width: 100%;
     text-align: center;
     transition: 0.3s;
@@ -1025,6 +1074,35 @@ footer {
 #lineGrad4 {
   width: 90%;
 }
+
+#demo {
+  height: auto;
+
+}
+
+.topIcon{
+  display: none;
+
+}
+
+.fa, .far, .fas {
+  display: none !important;
+}
+
+h1.text-uppercase {
+  padding-top: 110px;
+}
+
+/* .button-group button:active {
+  text-decoration: none;
+  color: #59ABD0;
+}
+
+.active, button:hover {
+  text-decoration: none !important;
+  color: #59ABD0;
+} */
+
   }
 
 /* end phone media query */

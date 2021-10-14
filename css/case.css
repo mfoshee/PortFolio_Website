@@ -270,6 +270,16 @@ button:hover
   box-shadow: none !important;
 }
 
+.button-group button:active {
+  text-decoration: none;
+  color: #59ABD0;
+}
+
+.active, button:hover {
+  text-decoration: none !important;
+  color: #59ABD0;
+}
+
 .smCasePhoto {
   /* align-content: 186px; */
   align-self: flex-start;
