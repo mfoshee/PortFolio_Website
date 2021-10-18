@@ -272,13 +272,20 @@ button:hover
 
 .button-group button:active {
   text-decoration: none;
-  color: #59ABD0;
+  background-color: #59ABD0;
 }
 
-.active, button:hover {
+button.active, button:hover {
   text-decoration: none !important;
-  color: #59ABD0;
+  /* background-color: #59ABD0 !important; */
 }
+
+button.active, button.relatedWork:hover {
+  text-decoration: none !important;
+  background-color: #59ABD0 !important;
+}
+
+
 
 .smCasePhoto {
   /* align-content: 186px; */

@@ -186,6 +186,7 @@ button.dropbtn {
   background: none;
 }
 
+
 .button-group button {
   padding-right: 50px;
   line-height: 35px;
@@ -301,13 +302,15 @@ h5{
 }
 
 .flex-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   flex-wrap: wrap;
   background-color: white;
   width: auto;
   justify-content: center;
   align-items: center;
   margin-bottom: 10px;
+  grid-gap: 80px;
 }
 .flex-container > div {
   margin: 10px;
@@ -351,7 +354,7 @@ h2 a, h2 a:link {
 }
 
 .carousel-inner {
-  padding: 0px 100px 0px 100px;
+  padding: 0px 150px 0px 150px;
   margin: 50px;
 }
 
@@ -363,8 +366,6 @@ h2 a, h2 a:link {
   align-items: top;
 }
 
-
-.carousel-control-next .carousel-control-prev {color: #DE007A;}
 
 /* container - front and back side */
 .flip-card-inner {
@@ -457,15 +458,7 @@ h2 a, h2 a:link {
   padding-right: 50px;
   margin-bottom: 0;
 }
-/* 
-.carousel-inner img {
-  width: 100%;
-  height: 100%;
-} */
 
-.carousel-indicators {
-  color: #DE007A !important;
-}
 
 /* flip card end */
 /* ****************************************************************** */
@@ -488,11 +481,8 @@ img.d-block.w-100 {
   margin-right: -100%;
   backface-visibility: hidden;
   @include transition($carousel-transition);
-  transition-duration: 1s;
+  transition-duration: 1.2s;
 }
-
-
-
 
 .hide {
   display: none;
@@ -683,6 +673,7 @@ button.more {
   width: 21px;
   background-repeat: no-repeat;
   align-items: center;
+  margin-left: 100px;
 }
 
 .carousel-control-next-icon {
@@ -692,6 +683,7 @@ button.more {
   width: 21px;
   background-repeat: no-repeat;
   align-items: center;
+  margin-right: 100px;
 }
 
 
@@ -699,6 +691,25 @@ button.more {
   display: flex;
   align-items: center;
   margin-top: 0;
+}
+
+
+.carousel-indicators li {
+  background-color: #DE007A;
+  z-index: -1;
+}
+
+ul.carousel-indicators {z-index: -1;}
+.carousel-inner {z-index: -2;}
+
+.button-group button {
+  font-size: 15px;
+  line-height: 20px;
+  padding: 5px 10px;
+  background-color: #DE007A;
+  color: white;
+  border-radius: 10px;
+  margin: 5px;
 }
 
 /* 
@@ -758,6 +769,7 @@ button.more {
   }
 
   #lineGrad3 {
+    display: none;
     margin-left: 0%;
     width: 90%;
   }
@@ -845,7 +857,7 @@ button.more {
     white-space: nowrap;
     line-height: 80px;
     padding-top: 60px;
-    /* margin-left: 20px; */
+    margin-left: 20px;
     margin-right: 2vw;
     text-shadow: 1px 1px rgba(255, 255, 255, .8);
   }
@@ -885,6 +897,9 @@ h2{
   margin-top: 25px;
   text-align: center;
 }
+h2 a, h2 a:link {
+  font-size: 30px;
+}
 
 .flex-container {
   display: grid;
@@ -906,6 +921,12 @@ h2{
 div.row.grid {
     max-width: 100%;
 }
+
+.carousel-control-next, .carousel-control-prev {
+  display: none;
+}
+
+
 
 /* footer */
 
@@ -938,9 +959,16 @@ footer {
   padding: 0;
 }
 
+footer.footerGrid {
+  align-items: center;
+}
+
+
   .footerGrid .navigation {display: none;}
 
-  .footerGrid .social {
+  .footerGrid .social {display: none;}
+
+  /* .footerGrid .social {
     width: 20%;
     display: inline-flex;
     justify-content: center;
@@ -948,7 +976,7 @@ footer {
     margin-right: 10%;
     margin-bottom: 25px;
     padding-top: 20px;
-  }
+  } */
 
   .footLine {
     margin-top: 100px;
@@ -1093,14 +1121,39 @@ h1.text-uppercase {
   padding-top: 110px;
 }
 
-/* .button-group button:active {
-  text-decoration: none;
-  color: #59ABD0;
+.LI-name {
+  margin-bottom: 60px;
 }
 
-.active, button:hover {
-  text-decoration: none !important;
-  color: #59ABD0;
+.our-project {
+  align-content: center;
+}
+
+div.row.grid {
+  width: auto;
+}
+/* 
+.project-area {
+  width: 100%;
+}
+
+.container {
+  max-width: 100%;
+}  
+ */
+
+/* ::after,::before{margin-left: 50px;} */
+
+/* .mfp-arrow .mfp-arrow-right .mfp-prevent-close {
+
+  background-color: none;
+} */
+
+
+
+/* .col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  padding-left: 20px;
+  margin-right: 0;
 } */
 
   }
