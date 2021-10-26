@@ -1132,6 +1132,16 @@ h1.text-uppercase {
 div.row.grid {
   width: auto;
 }
+
+.img-fluid {
+  border-radius: 20px;
+  margin-top: 40px;
+  box-shadow: 1px 1px 8px -1px rgba(121,121,121,0.5);
+  -webkit-box-shadow: 1px 1px 8px -1px rgba(121,121,121,0.5);
+  -moz-box-shadow: 1px 1px 8px -1px rgba(121,121,121,0.5);
+  max-width: 95%;
+}
+
 /* 
 .project-area {
   width: 100%;
